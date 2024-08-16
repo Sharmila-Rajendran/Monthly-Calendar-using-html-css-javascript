@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="left" id="left">
+            <div class="calendar" id="calendar">
+                <div class="month" id="month">
+                <i class="fas fa-angle-left prev" id="previous"></i>
+                <div class="date" id="date">December 2020</div>
+                <i class="fas fa-angle-right next" id="next"></i>
+                </div>
+                <div class="daysinweek" id="daysinweek">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days" id="days"></div>
+                <div class="today" id="tod">
+                    <div class="goto" id="goto">
+                        <input type="text" placeholder="mm/yyyy" class="date-input" id="dateInput"/>
+                        <button class="gobutton" id="gobutt">Go</button>
+                    </div>
+                    <button class="todaybutton" id="tdybutt">Today</button>
+                </div>
+            </div>
+        </div>
+        <div class="right" id="right">
+          <div class="todaydate" id="tdydate">
+            <div class="eventday" id="evtday"></div>
+            <div class="eventdate" id="evtdate"></div>
+          </div>
+          <div class="events" id="evnts"></div>
+          <div class="addeventwrapper" id="wrap">
+            <div class="addeventheader" id="header">
+              <div class="title" id="title">Add Event</div>
+              <i class="fas fa-times close" id="close"></i>
+            </div>
+            <div class="addeventbody" id="evtbody">
+              <div class="addeventinput" id="evtinput">
+                <input type="text" placeholder="Event Name" class="event-name" id="eventName"/>
+              </div>
+              <div class="addeventinput" id="evtinput1">
+                <input type="text" placeholder="Event Time From" class="event-time-from" id="eventTimefrom"/>
+              </div>
+              <div class="addeventinput" id="evtinput2">
+                <input type="text" placeholder="Event Time To" class="event-time-to" id="eventTimeto"/>
+              </div>
+            </div>
+            <div class="addeventfooter" id="evtfooter">
+              <button class="addeventbutton" id="evtbutt">Add Event</button>
+            </div>
+          </div>
+          <button class="addevent" id="evntadd">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>  
+      </div>
+</body>
+</html>
